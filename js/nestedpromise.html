@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <script>
+        // var promise = new Promise(function(resolve,reject){
+        //     console.log("first");
+        //     resolve("new first promise");
+        //     console.log("promise1 nested then44");
+        // });
+        // promise.then(function(msg){
+        //     console.log(msg);
+        //     //return promise2;
+        // })
+        // .then((message)=>{
+        //     console.log("promise1 nested then",message);
+        // });
+        // var promise2 = new Promise(function(resolve,reject){
+        //     console.log("new second promise");
+        //     resolve("second promise");
+        // });
+        // promise2.then(function(msg){
+        //     console.log(msg);
+        //     // return promise2;
+        // });
+        // console.log("hii");
+//   ********************************************
+        var promise = new Promise(function(resolve,reject){
+            // console.log("first promise");//1
+            function hii(){
+                console.log("function inside promise");
+            }
+            hii();
+            resolve("first promise");
+            console.log("statement below resolve");
+
+        });
+        console.log(typeof(promise));
+        promise.then(function(msg){
+            console.log(msg,"hey");//3
+            return promise2.then((msg)=>{
+                console.log(msg,"hey2");//4
+                return "pro";
+            })
+        })
+        .then((message)=>{
+            setTimeout(()=>{throw new Error,5000});
+            // throw new Error;
+            console.log("set out in then");
+        }).then(()=>{
+            console.log("hii");
+        });
+        var promise2 = new Promise(function(resolve,reject){
+            setTimeout(()=>{resolve("techigai")},5000);
+            console.log("second promise");//2
+            // resolve("hyderabd");
+            // resolve("karimnagar");
+        });
+// *****************************************************************
+        // const a = {
+        //     b: function () {
+        //         console.log("hii");
+        //         return () => { console.log(this) };
+        //     }
+        // };
+        // a.b()();
+// ***********************************************************************
+
+    </script>
+</body>
+</html>

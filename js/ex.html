@@ -1,0 +1,220 @@
+<html>
+    <body>
+        <p id="s">kkkk</p>
+    </body>
+<script>
+    "use strict";
+    let c=5;
+    var k=1;
+    // console.log("k="+k);
+    // console.log("z="+ z);
+    // console.log("m="+m);
+    let m=9;
+    var z=9;
+    if(m==8){
+        console.log("m="+m);
+    }
+    else if(m==9){
+        console.log(" else k="+k);
+    }
+    else if(z==9){
+        console.log(" elsee k="+k);
+    }
+    switch(m<=10 && m<15){
+        case true: console.log(" elsee k="+k);
+                break;
+        case false:console.log(" elsee k="+k);
+               break;
+    }
+    k=( false && 0)
+    console.log(k);
+    document.getElementById("s").innerHTML="kk";
+    for(var item in [1,2,3]){
+    console.log(item) // will log 1,2,3 but also "someProperty"
+    }
+    var ary = [1,2,3];
+    for(var item in ary){
+        if(ary.hasOwnProperty(item)){
+        console.log(item) // will log only 1,2,3
+    }
+    }
+    let num=[1,2,3,4,5,6,77];
+    var isodd = (num) => {
+        var num2 = []
+        let k=0
+        for(let i of num) {
+            // console.log(i);
+           if(i%2==1){
+
+              num2.push(i);
+              k=k++;
+           }
+        }
+        // console.log(num2);
+        return num2;
+    }
+    m=[]
+    // m=num.filter(isodd);
+    console.log("m="+m);
+    var obj = {
+        ni:100
+}
+ni=90090;
+var ni = 2020; // yikes!
+var add2 = (a,b,c)=> this.ni + a + b + c;
+var result = add(1,2,3)
+
+ function add(a, b, c) {
+  return ni + a + b + c;
+}
+
+
+// var result2 = obj.add2(1,2,3) // establishing the scope as "obj"
+console.log(result)
+// console.log(result2) // result 106
+
+// apply
+// const arr = [1, 2, 3]
+// var result = add.apply(window, arr) // establishing the scope as "obj"
+// console.log(result) // result 106
+
+// bind
+// var result = add.bind(obj) // establishing the scope as "obj"
+// console.log(result(1, 2, 3)) // result 106
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+// ask(
+//   "Do you agree?",
+//   function() { alert("You agreed."); },
+//   function() { alert("You canceled the execution."); }
+// );
+
+var x = 'global';
+let y = 'global';
+console.log(this.x); 
+// console.log(this.y);
+// var greeter = "hey hi";
+// {
+//     var  hello = "nikkigfhgcvcghc"; 
+//  {
+//          hello = "hello";
+//  }
+//  console.log(hello);
+// }
+// console.log(hello);  
+
+let greeter = "hey hi";
+    var times = 4;
+
+    if (times > 3) {
+        let greeter = "say Hello instead"; 
+    }
+    
+    console.log(greeter)
+
+
+    const greeting = {
+        message: "say Hi",
+        times: 4
+    }
+    // greeting = {
+    //     words: "Hello",
+    //     number: "five"
+    // } 
+    greeting.message="kk"
+    console.log(greeting);
+    {
+    x=10;{
+        console.log(x);
+    }
+    }
+    console.log(x);
+
+ var x=10;
+function fun(){
+    window.x=20;
+}
+// fun();
+// console.log(x)
+// const arr2 = new Array(10,20);
+// arr=[10,20,30]
+// arr.length=40;
+// arr.pop();
+// console.log(arr)
+
+const ages = [32, 33, 16, 40];
+window.v=2909;
+function checkAdult(age) {
+    let v=1020;
+  if (age >= 18){
+  return age;
+  }
+  console.log(this.v);
+}
+ages.forEach((checkAdult));
+`use strict`
+ obj = { // does not create a new scope
+  i: 10,
+  b: () => console.log(this.i, this),
+  c: function() {
+    console.log(this.i, this);  
+  }
+}
+
+obj.b(); // prints undefined, Window {...} (or the global object)
+obj.c();
+// const student = {
+//     name :'John',
+//     gender : 'Male',
+// }
+
+// student.age = 15;
+// var studObj1 = new Object(student);
+// studObj1.age=90;
+// console.log(studObj1.age); // 15
+
+// var studObj2 = new Objecy();
+// console.log(studObj2.age // undefined
+// );
+var  Student =  {
+    name :'John',
+    gender :'M'
+}
+var ju;
+checkAdult(Student);
+function checkAdult(age) {
+ ju=age;
+}
+document.getElementById("s").innerHTML = ju;
+var studObj1 = new Object(Student);
+console.log(studObj1.age); // 15
+Student.age = 15;
+var studObj2 = new Object(Student);
+console.log(studObj2.age); // 15
+
+ const obj22={
+    li: function fun(){
+    console.log(this);
+    function hii(){
+        console.log("hii");
+       console.log(this);
+    }
+     return hii();
+}
+}
+obj22.li(); 
+const a=["apple","banana","citrus"];
+       const b=["cars","nikki","bus"];
+       const ck=["rishi"];
+    //    const res=a.concat(b,c);
+       console.log(a.concat(b,ck));
+       console.log(a);
+    //    console.log(res);
+    console.log(a.join("nikki"));
+    console.log(a);
+</script>
+</html>

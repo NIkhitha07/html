@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* div{
+        position: relative;
+        padding: 20px;
+        background-color: black;
+        height: 10px;
+        width: 10px;
+    } */
+    div{
+        height: 20px;
+        background-color: black;
+        width: 20px;
+    }
+</style>
+<body>
+    <div></div> 
+    <script>
+        let ball = document.querySelector('div')
+        // ball.addEventListener('mouseover', () => console.log("hi"))
+        function moveat(pageX, pageY) {
+            pos= pageX - ball.offsetWidth/2 +'px';
+            ball.style.left =pos
+            ball.style.top = pageY -ball.offsetHeight/2 + 'px';
+        }
+        function onmousemove(event) {
+            moveat(event.pageX, event.pageY);
+        }
+        ball.addEventListener('mousedown',down)
+        ball.addEventListener('mouseup',up)
+        function up(event){
+            document.removeEventListener('mousemove', onmousemove)
+        }
+        function down(event){}
+        document.addEventListener('mousemove', onmousemove);
+    // }
+        // down();
+        // moveAt(event.pageX, event.pageY);
+    </script>
+</body>
+</html>

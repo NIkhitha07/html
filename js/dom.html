@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id='hr'>nikki</h1>
+    <p id="demo" name="nikhitha">hiiiii</p>
+    <input id="input" type="checkbox" checked> checkbox
+    <div>
+        <div>ff</div>
+    </div>
+    <button onClick="myFunction()">Hiii</button>
+    <script>
+        // let v = document.getElementById("hr");
+        // alert(typeof (v));
+        // document.getElementById('demo').innerHTML = "nikki" + v.innerHTML;
+        // myData = {
+        //     name: 'Caesar',
+        //     title: 'Imperator'
+        // };
+        // document.p.mydata=myData;
+        // document.body.techigai = ()=>{
+        //     console.log("Nikhitha");
+        // }
+        // document.body.techigai();
+        // alert(document.p.mydata.title);
+        // for(i=0; i<document.documentElement.childNodes.length;i++){
+        //     console.log(document.documentElement.childNodes[i]);
+        // }
+        // console.log("hey")
+        for (i = 0; i < document.body.childNodes.length; i++) {
+            console.log(document.body.childNodes[i]);
+        }
+        console.log(document.body.hasChildNodes());
+        console.log(document.body.childNodes[1]);
+        console.log(document.body.firstChild);
+        console.log(document.body.childNodes.length - 1);
+        for (let prop of document.body.childNodes) console.log(prop, document.body.childNodes[prop]);
+        console.log(document.body.parentNode == document.documentElement);
+        console.log(document.head.nextSibling);
+        // console.log(document.body.parentNode);
+        // console.log(document.body.parentElement);
+        console.log(demo.getAttribute("name"));
+        demo.setAttribute("name", "name2")
+        console.log(demo.getAttribute("name"));
+        console.log(demo.attributes[0].value);
+
+        // for (let attr of demo.attributes) { 
+        //    console.log(`${attr.name} = ${attr.value}`);
+        // }
+
+        // alert(input.getAttribute('checked')); 
+        // alert(input.checked);
+
+        function myFunction() {
+            var x = document.querySelector("#demo");
+            x.style.backgroundColor = "red";
+        }
+    </script>
+    <h2>content below script</h2>
+</body>
+
+</html>

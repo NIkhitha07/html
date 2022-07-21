@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const xml=new XMLHttpRequest();
+        const url="https://jsonplaceholder.typicode.com/posts/";
+        xml.open('GET',url);
+        
+        console.log(xml.status);
+        // xml.setRequestHeader('Content-Type','application/json');
+         data={
+            "userId": 101,
+            "title": "user title",
+            "body": "user data"
+        };
+        xml.onprogress= () =>{
+            console.log("progressing");
+        }
+
+        xml.onreadystatechange=()=>{
+            if(xml.status==102){
+                    console.log(xml.status);
+                }
+        }
+        xml.onload=function()
+        {
+            
+            if(xml.status>200 && xml.status<300)
+            {
+                console.log(xml.status);
+                console.log(xml.response);
+                data=JSON.parse(xml.responseText);
+                console.log(data);
+            }
+            if(xml.status==204)
+            {
+                console.log(xml.status);
+                console.log(xml.response);
+                console.log(data);
+            }
+            else if(xml.request==404)
+            {
+                console.log("url not found");
+            }
+            else{
+                console.log(xml.status);
+                console.log("error");
+            }  
+        }
+        xml.onerror= () =>{
+            console.log("error2");
+        }
+        xml.send(JSON.stringify(data));
+        console.log(xml.status);
+    </script>
+</body>
+</html>

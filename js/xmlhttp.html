@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let xhr = new XMLHttpRequest();
+
+        // xhr.open('GET', "json.json");
+
+        // xhr.responseType = 'json';
+
+        // xhr.send();
+
+        // xhr.onreadystatechange = function () {
+        //     if (xhr.readyState == 3) {
+        //         console.log("loading");
+        //     }
+        //     if (xhr.readyState == 4) {
+        //         console.log("loaded");
+        //     }
+        // };
+
+        // xhr.onload = function () {
+        //     let responseObj = xhr.response;
+        //     alert(responseObj.message); // Hello, world!
+        // };
+
+
+
+        const data = {
+            fish: 'Salmon',
+            weight: '1.5 KG',
+            units: 5
+        };
+        const data2 = {
+            fish: 'nikki',
+            weight: '5 KG',
+            units: 10
+        };
+        var xhr = new XMLHttpRequest();
+        xhr.open('DELETE', 'https://jsonplaceholder.typicode.com/posts/1', true);
+        xhr.responseType = 'json';
+        xhr.setRequestHeader("Content-type","application/Json");
+        // xhr.send(JSON.stringify(data,data2));
+        // xhr.send(JSON.stringify(data));
+        xhr.send();
+        xhr.onload = () => {
+            console.log(xhr.response);
+        };
+        console.log(xhr.response);
+
+
+        // var xhr2 = new XMLHttpRequest();
+        // xhr2.open('POST', 'https://jsonplaceholder.typicode.com/todos/?name=nikki', true);
+        // xhr2.responseType = 'json';
+        // // xhr2.setRequestHeader("Content-type","application/Json");
+        // xhr2.send(JSON.stringify(data2));
+        // // xhr2.send(JSON.stringify(data2));
+        // xhr2.onload = () => {
+        //     console.log(xhr2.response);
+        // };
+        // console.log(xhr2.response);
+    </script>
+</body>
+
+</html>

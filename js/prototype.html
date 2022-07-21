@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function Pet(name, species) {
+        //     console.log(this,"pet");
+        //     this.name = name;
+        //     this.species = species;
+        // }
+        // // function view() {
+        // //     return this.name + " is a " + this.species + "!";
+        // // }
+        // // Pet.prototype.view = view;
+        // var pet1 = new Pet('Gabriella', 'Dog');
+        // //    console.log(pet1.view());
+
+        // function Dog(name) {
+        //     console.log(this);
+        //     Pet.call(this, name, "dog");
+        // }
+        // var dog1 = new Dog("puppie");
+        // console.log(typeof(Dog));
+        //  Dog.prototype = new Pet();
+        //  console.log(typeof(Dog));
+        //  console.log(typeof(Pet));
+        //  console.log(Dog.prototype);
+        //  console.log(Pet.prototype);
+
+
+        // Dog.prototype.bark = function () {
+        //    console.log("Woof!");
+        // }
+        // var dog1 = new Dog("puppie");
+        // console.log(dog1.name);
+
+
+        // console.log(typeof(Pet));
+        // console.log(typeof(Dog));
+        // function hii(){
+        //     console.log(this,"function")
+        //      return "hello";
+        // }
+        // hii();
+        // console.log(typeof(hii()));
+
+
+
+    //     var obj={
+    //        name:"nikki",
+    //        company:"techigai"
+    //    }
+    //    var obj2 ={
+    //        name:"nikki2"
+    //    }
+    //    Object.setPrototypeOf(obj2,obj);
+    //    console.log(obj2);
+    //    console.log(Object.getPrototypeOf(obj2));
+
+
+
+
+        function fun2(name){
+            this.name=name;
+        }
+        class fun3{
+            constructor(name){
+                this.name=name;
+            }
+            
+        }
+        obj={
+
+        }
+        var obj2 = new fun2("nikki");
+        var obj3 = new fun2("nikki2");
+        function fun(){
+            console.log("hii");
+        }
+        console.log(obj2.__proto__);
+        console.log(obj3.__proto__);
+        console.log(obj.__proto__,"k");
+        console.log(obj.prototype,"l");
+        console.log(fun.__proto__,"m");
+        console.log(fun.prototype,"m");
+        console.log(Object.prototype);
+        console.log(Function.prototype);
+        console.log(typeof(Object));
+        console.log(x,"x valueeeeeeeee");
+        let x=10
+    </script>
+</body>
+
+</html>

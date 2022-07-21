@@ -1,0 +1,32 @@
+<DOCTYPE html>
+    <html>
+   <style>
+       #container{
+           padding: 20px;
+           border: 1px solid green;
+       }
+   </style>
+    <body id="bdy">
+        <!-- div button body -->
+        <div id="container">
+            <button id="btn">Click Me!</button>
+        </div>
+        <script type="text/javascript">
+            document.getElementById('bdy')
+                .addEventListener('click', function () {
+                alert('Body!');
+            })
+            document.getElementById('container')
+                .addEventListener('click', function () {
+                alert('Div!');
+            })
+            // document.getElementById('btn')
+            //     .addEventListener('click', function () {
+            //         console.log("hii");
+            //     alert('Button!');
+            // })
+        </script>
+        
+    </body>
+  
+    </html>

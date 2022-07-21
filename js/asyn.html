@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // async function function1(){
+        //     console.log("1 2 3 4");
+        //     console.log("1 2 3 4");
+        //     return "hii";
+        //     // return resolve();
+        //     throw new Error("Thrown from thisThrows()");
+        // }
+        // function1().then(()=>{
+        //     console.log("hii");
+        // },(a)=>{
+        //     console.log(a);
+        // }).then(()=>{
+        //     console.log("2nd then");
+        // }).then(()=>{
+        //     console.log("3rd then");
+        // });
+        // try{
+        //     function1();
+        // }catch(e){
+        //     console.log(e,"catch");
+        // }finally{
+        //     console.log("hita2")
+        // }
+
+
+        async function kittu(){
+            throw new Error;
+        }
+        function hii(){
+           console.log("namasthe");
+           kittu();
+           console.log("namasthe2");
+        }
+        kittu().then(()=>{
+            console.log("huuuuuuu");
+        },()=>{
+             console.log("kiiiiii");
+        })
+        hii();
+
+
+        // async function fun() {
+        //     x = 1 + 1;
+        //     let promise = new Promise((resolve, reject) => {
+        //         if (x == 2)
+        //         console.log("Techigai");
+        //             setTimeout(() =>  resolve("amazon"), 6000);
+        //             resolve("l&t");
+        //     })
+        //     let result = await promise;
+        //     console.log(promise);
+        //     console.log(result);
+        //     console.log(typeof(result));
+        //     // setTimeout(()=>{console.log("hello"); },1000);
+        //     // // return result;
+        // }
+        // fun().then((message) => console.log(message));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .focused{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <form action="" name="form1">
+        <input name="one" value="1">
+        <input name="two" value="2">
+    </form>
+    <form action="" name="form1">
+        <input name="three" value="125">
+        <input name="four" value="2">
+    </form>
+    <form>
+        <input type="radio" name="age" value="10">
+        <input type="radio" name="age" value="20">
+      </form>
+      <select id="select" multiple>
+        <option value="apple">Apple</option>
+        <option value="pear">Pear</option>
+        <option value="banana">Banana</option>
+      </select>
+</body>
+<script>
+    console.log(document.forms.form1);
+    form =document.forms.form1
+    console.log(form.elements.one);
+    form2=document.forms[2];
+    let ageElems = form.elements.three;
+    console.log(ageElems);
+    console.log(ageElems.form2);
+    select.options[2].selected = true;
+    select.value = 'pear';
+    console.log(select.options);
+    ageElems.addEventListener("focus", () => form.classList.add('focused'));
+//   form.addEventListener("focusout", () => form.classList.remove('focused'));
+</script>
+</html>

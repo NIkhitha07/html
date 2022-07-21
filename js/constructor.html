@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let k = fun();
+        function fun() {
+            return "hii";
+        }
+        // let k= fun();
+
+        // *********************************************************************
+        console.log(k)
+        class example {
+            constructor(name, surname) {
+                this.name = name;
+                this.surname = surname;
+            }
+            area() {
+                // console.log(this);
+                console.log(this.name);
+                console.log("method");
+            }
+            static area2() {
+                // console.log(this);
+                console.log("static method");
+            }
+        }
+        var example1 = new example('Jack', 'Smith');
+        // console.log(example1);
+        // example1.area();
+        // example.area2();
+        // example.prototype.newvalue = 456;
+        // console.log(example1.newvalue);
+        // ****************************************************************
+        // class example2 extends example {
+        //     constructor(kid){
+        //         super(name, surname);
+        //         this.kid=kid;
+        //        // this.surname=surname;
+        //     }
+        //     area() {
+        //        super.area();
+        //         console.log("area inside inherited function");
+        //     }
+        //     namasthe() {
+        //         // console.log(this)
+        //         console.log("method");
+        //     }
+        // }
+        // var example56 = new example2('Jack2', 'Smith2',90);
+        // example56.area();
+        // example2.area2();
+
+        // **********************************************************
+        // function fun(name, surname) {
+        //     console.log(this);
+        //     this.name = name;
+        //     this.surname = surname;
+        //     // area2()
+        // }
+        // var m = new fun("nikki", "bijju");
+
+        // console.log(m);
+    </script>
+</body>
+
+</html>

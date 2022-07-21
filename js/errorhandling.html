@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    //     async function thisThrows() {
+    //          console.log("async function");
+    //         //  return "namasthe ";
+    //         throw new Error("Thrown from thisThrows()");
+    //         //  console.log("async function2");
+    //     }
+
+    //     async function run() {
+    //         try {
+    //             await thisThrows();
+    //            console.log("statemnt inside function");
+
+    //         } 
+    //         catch (e) {
+    //             console.log(e,"hello");
+    //         } 
+    //         finally {
+    //             console.log('We do cleanup here');
+    //         }
+    //     }
+    //     // thisThrows();
+    //  thisThrows().then((e)=>{
+    //      console.log("hii",e)
+    //  }, ()=>{console.log("rejected")})
+
+    //     run();
+
+// ******************************************
+
+        // async function thisThrows() {
+        //     throw new Error("Thrown from thisThrows()");
+        // }
+        // try {
+        //     thisThrows();
+        // } catch (e) {
+        //     console.error(e,"catch");
+        // } finally {
+        //     console.log('We do cleanup here');
+        // }
+
+        // ******************************************************************
+
+        // async function thisThrows() {
+        //     throw new Error("Thrown from thisThrows()");
+        // }
+
+        // thisThrows()
+        //     .catch(console.error)
+        //     .then(() => console.log('We do cleanup here'));
+
+     const x = new Promise((resolve,reject)=>{
+         if(true){resolve("hii")}
+     }
+     )
+     x.then((y)=>{
+         console.log(y)
+     })
+     console.log(x.then())
+    //  const y= result =&gt;{
+
+    //  }
+    function CallBackTeaser(callback, param){
+console.log(`Calling the callback function`);
+// setTimeout(()=>{callback(param)}, 0);//Calling the function asynchronously, passing the callback function as the first argument
+callback(param)
+console.log(`callback function completed execution`);
+
+}
+// function consoleMyDetails(person){
+// if(person){
+// console.log(`Hi, my name is ${person.name}, i am ${person.job} & super exited about ${person.hobby}`);
+// }
+// }
+// CallBackTeaser(consoleMyDetails, {'name': 'Praveen',
+// 'job':'Developer',
+// 'hobby':'learning new technologies.'
+// });
+function CallBackTeaser(callback, param){
+callback(param);
+}
+function consoleMyDetails(person){
+if(person){
+console.log(`Hi, my name is ${person.name}, i am ${person.job} & super exited about ${person.hobby}`);
+}
+}
+CallBackTeaser(consoleMyDetails, {'name': 'Praveen',
+'job':'Developer',
+'hobby':'learning new technologies.'
+});
+        
+    </script>
+</body>
+
+</html>

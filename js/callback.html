@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // **************normal function*************
+        //  function hello(cb) {
+        //     cb();
+        // }
+        // function hi() {
+        //     console.log(this);
+        // }
+        // hello(hi);
+// *********************************
+var obj={
+hel  : function(){
+    console.log(this,"hell");
+    // callb();
+    return m = ()=> {
+    console.log(this,"m");
+}
+// hel(m);
+    },
+}
+// let m=()=>{
+//     console.log(this);
+// }
+var k =obj.hel()()
+console.log(k,"nikki");
+// ***************************************************
+// var obj={
+// hel  : (callb)=>{
+//     callb();
+// }
+// }
+// var  m = ()=> {
+//     console.log(this);
+// }
+// // let m=()=>{
+// //     console.log(this);
+// // }
+// obj.hel(m);
+// // *********************************
+// var obj2={
+// hel  : (callb)=>{
+//     callb();
+// }
+// }
+// var  m = ()=> {
+//     console.log(this,"m");
+// }
+// function m (){
+//     console.log(this,"m");
+// }
+m();
+obj.hel();
+</script>
+</body>
+</html>

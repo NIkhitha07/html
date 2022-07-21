@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img {
+            height: 300px;
+            width: 200px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            alert("DomContentloaded");
+            console.log(`Image size: ${img.offsetWidth}x${img.offsetHeight}`)
+
+        });
+        alert("first script");
+        // alert(getComputedStyle(document.body).marginTop);
+
+    </script>
+    <script  async src="java1.js"></script>
+    <!-- <script async src="java2.js"></script>  -->
+</head>
+
+<body>
+    <h1>
+        nikhitha
+    </h1>
+    <img id="img" src="https://en.js.cx/clipart/train.gif?speed=1&cache=0">
+
+    <!-- <img id="img"src="img.jpg" alt=""> -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            alert("DomContentloaded 32");
+            console.log(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
+            // alert(getComputedStyle(document.body).marginTop);
+        });
+        alert("2nd script");
+        img.addEventListener("click", () => {
+            console.log(`Image size: ${img.offsetWidth}x${img.offsetHeight}`)
+        })
+        window.onload = () => { alert("Page loaded including resouces"); }
+        window.onbeforeunload = function () {
+           return ("There are unsaved changes. Leave now?");
+        };
+        window.onbeforeunload =()=>{
+            // return ("There are unsaved changes. Leave now?");
+            event.returnValue = ""
+            // event.preventDefault();
+        }
+        document.addEventListener('readystatechange', () =>{
+            alert(document.readyState);
+            if (document.readyState == 'loading') {
+            console.log("loading");
+           alert(getComputedStyle(document.body).marginTop);
+        alert(document.body.marginTop);
+    
+            
+        }
+            if (document.readyState == 'interactive') {
+            console.log("interactive");
+            alert(getComputedStyle(document.body).marginTop);
+            
+        }
+     } );
+        alert(getComputedStyle(document.body).marginTop);
+        if (document.readyState == 'loading') {
+            console.log("loading");
+            alert(getComputedStyle(document.body).marginTop);
+            
+        }
+        if (document.readyState == 'interactive') {
+            console.log("interactive");
+            alert(getComputedStyle(document.body).marginTop);
+            
+        }
+        
+    </script>
+    <link rel="stylesheet" href="style.css">
+</body>
+
+</html>
