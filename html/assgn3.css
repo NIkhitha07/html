@@ -1,0 +1,135 @@
+label,body {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: whitesmoke;
+}
+p,h3,span,img{
+    margin: 0px;
+    padding: 0%;
+}
+h3{
+    padding-top: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.child {
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+    width: 250px;
+}
+.box{
+    width: 250px;
+}
+.location {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8px;
+    padding-top: 10px;
+}
+.img2 {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+    align-self: center;
+}
+.bottom {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid lightgrey;
+    justify-content: space-evenly;
+}
+.f1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-right: lightgrey 1px solid;
+}
+.f2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.img {
+    padding-bottom: 10px;
+}
+.box{
+    width: 250px;
+}
+.top {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.s1 {
+    display: none;
+}
+.child:hover .s1 {
+    display: inline;
+}
+input {
+    display: none;
+}
+ div span {
+    border: 2px solid lightgrey;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input ~ div span {
+    border: 2px solid white;
+    background-color: white;
+}
+input:checked ~ div span {
+    border: 2px solid white;
+    background-color: rgb(68, 0, 255);   
+}
+.top  span {
+    border: 2px solid grey;
+    background-color: white;
+}
+.top span::before{
+    color: white;
+    font-size: 10px;
+    font-family: 'FontAwesome';
+}
+input:checked ~ div span:before {
+    content: "\f00c";
+}
+input:checked ~ div .s1 {
+    display: inline;
+}
+ .k1{
+    border:2px solid white;
+    border-radius: 10px;
+}
+input:checked + .k1{
+    border: 2px solid blue;
+    border-radius: 10px;
+    transform: scale(1.05,1.05);
+}
+.icon{
+    color: lightslategrey;
+}
+input:hover + .k1{
+    border: 2px solid rgb(73, 73, 245);
+    cursor: pointer;
+    transform: scale(1.05,1.05);
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h3::after { 
+  content: " - after content";
+}
+p::first-letter {
+  color:chartreuse;
+  font-size: xx-large;
+}
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+::marker { 
+  color:chartreuse;
+  font-size: 23px;
+}
+::selection {
+  color: red;
+  background: yellow;
+}
+</style>
+</head>
+<body>
+<h3>Hiiii</h3>
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+</body>
+</html>

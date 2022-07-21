@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* .wrapper {
+            background-color: crimson;
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+        } */
+        .wrapper {
+            display: grid;
+            grid-auto-columns: 20px;
+            grid-template-columns:auto auto 20px 40px repeat(14, 1fr);
+        }
+        .wrapper2 {
+            background-color: cyan;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        .child {
+            border: 5px solid yellow;
+             grid-column-start: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="child">One</div>
+        <div class="child">Two</div>
+        <div class="child">Three</div>
+        <div class="child">Four</div>
+        <div class="child">Five</div>
+    </div>
+    <div class="wrapper2">
+        <div class="child">One</div>
+        <div class="child">Two</div>
+        <div class="child">Three</div>
+        <div class="child">Four</div>
+        <div class="child">Five</div>
+    </div>
+    <p style="text-align: center;"> Hiiii</p>  
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#s1 p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+#s1:hover p {
+  display: block;
+}
+#s0:hover h3{
+  color: rgb(95, 160, 111);
+}
+h4.hii:hover {
+  color: #ff0000;
+  font-size: 22px;
+} 
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+input:read-only {
+  color:darkblue;
+  font-size: 21px;
+}
+p:first-of-type {
+  background:darkmagenta;
+}
+p:first-child {
+  background-color: yellow;
+}
+input:out-of-range {
+  border: 2px solid rgb(255, 0, 0);
+}
+/* p:nth-last-of-type(2) {
+  background:rgb(0, 217, 255);
+} */
+input:optional {
+  background-color:lemonchiffon;
+}
+:target {
+  border: 2px solid #D4D4D4;
+  background-color: #e5eecc;
+}
+</style>
+</head>
+<body>
+
+<div id="s0"><h3>Changes color when you hover </h3>
+ 
+</div>
+<div id="s1"><br>Displays a block when you hover 
+    <p>Tada! Here I am!</p>
+  </div>
+<h4 class="hii">Highlight when you hover</h4>
+
+<p><b><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">This is a link</a></b></p>
+
+<br><input readonly value="Read Only">
+
+<!-- FIRST CHILD -->
+<div>
+    <H1>HIII</H1>
+    <p>This paragraph is the first child of its parent (div) and also first of type.</p>
+    <p>This paragraph is not the first child of its parent.</p>
+  </div>
+  
+  <div>
+    <p>This paragraph is the first child of its parent (div).</p>
+    <p>This paragraph is not the first child of its parent.</p>
+    <p>This paragraph is the first child of its parent (div).</p>
+  </div>
+ 
+  <input type="number" min="5" max="10" value="7">
+  <p>Try typing a number out of range (less than 5 or higher than 10), to see the styling disappear.</p>
+
+  <div>
+      <p></p>
+      <p>An optional input element:<br><input></p>
+  </div>
+<!-- target -->
+    <p><a href="#news1">Jump to New content 1</a></p>
+    <p><a href="#news2">Jump to New content 2</a></p>
+    
+    <p>Click on the links above and the :target selector highlight the current active HTML anchor.</p>
+    
+    <p id="news1"><b>New content 1...</b></p>
+    <p id="news2"><b>New content 2...</b></p>
+
+</body>
+</html>

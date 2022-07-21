@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Login Form</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: row;
+        }
+        .child1{
+            flex-grow: 1;
+            width: 50vw;
+            height: 100vh;
+            justify-content: center;
+        }
+        .child2{
+            flex-grow: 1;
+            /* flex-basis: 1; */
+            width: 50vw;
+            height: 100vh;
+            background-image: linear-gradient(to bottom left, rgb(152,94,206)5%,rgb(79,78,150) 120% );
+        }
+        .loginform{
+            margin: auto;
+            width: 80%;
+            padding: 50px;
+            padding-top: 20%;
+        }
+        .started{
+            font-size: 30px;
+            color: rgb(156, 113, 196);
+            padding-left: 0px;
+            padding-bottom: 50px;
+        }
+        .icon{
+            font-size: 10x;
+            border: gainsboro;
+            color:gainsboro;
+            padding-right: 5px;
+        }
+        .itext{
+            border: none;
+        }
+        .input{
+            height: 40px;
+            padding: auto;
+            /* l */
+            width: 80%;
+            border: none;
+            border-bottom: solid rgb(197, 195, 195) 1px;
+        }
+        .input2{
+            height: 80px;
+            width: 80%;
+            border: none;
+            padding: auto;
+            padding-top: 40px;
+            border-bottom: solid rgb(197, 195, 195) 1px;
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            padding-top: 40px;
+        }
+        button{
+            border-radius: 20px ;
+            border: none;
+            color: white;
+            width: 190px;
+            padding: 11px;
+            background-color: rgb(68, 204, 174);
+            font-size: small;
+            box-shadow:1px 1px 8px rgb(84, 224, 189);
+            margin-left: 120px;
+        }
+        #text{
+            color: rgb(156, 113, 196);
+            padding-top: 10px;
+        }
+        #welcome{
+            position: relative;
+            margin-top: 150px;
+            font-family:serif;
+            font-size: 20px;
+            color: white;
+            font-family:sans-serif ;
+            font-weight: bold; 
+        }
+        .icon2{
+            font-size: 120px;
+            padding-top: 60px;
+            color: ivory;
+        }
+        #btext{
+            color: rgba(255, 255, 255, 0.87);
+            width: 375px;
+            font-size: 15px;
+            padding: 60px;
+            padding-bottom: 160px;
+            margin: auto;
+        }
+        .b1{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+        .text{
+            color: white;
+            /* font-family: 'cairo'; */
+            opacity:0.6;
+            font-family:monospace;
+            letter-spacing: 2px;
+        }
+        .text2{
+            color: white;
+            opacity:0.6 ;
+            /* font-family: 'cairo'; */
+            font-family:monospace;
+            letter-spacing: 2px;
+        }
+        .border{
+            border-radius: 2px;
+            border:1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="child1">
+            <div class="loginform">
+                <div class="started">Get Started</div>
+                <div class="input">
+                    <i class="fa fa-user-friends icon"></i>
+                    <input class="itext" type="text" placeholder="Username">
+                </div>
+                <div class="input2">
+                    <i class="fa fa-unlock-alt icon"></i>
+                    <input class="itext" type="password" placeholder="Password">
+                </div>
+                <div class="bottom">
+                    <a id="text">Forgot Password?</a>
+                    <button> SIGN IN </button>
+                </div>
+            </div>
+        </div>
+        <div class="child2">
+            <div id="welcome" style="text-align:center ; margin: auto; padding-top: 20%;">
+                <span>WELCOME TO</span>
+            </div>
+            <div style="text-align: center; ">
+                <i class="fa fa-graduation-cap icon2" aria-hidden="true"></i>
+                <h2 style="color:white">CLASS BOX</h2>
+                <p id="btext" style="text-align:center">Everything is  always integreted with your college's online handouts</p>
+            </div>
+            <div class="b1">
+                <div class="text">BY <b>HAPPY CODE</b></div>
+                <div class="border"></div>
+                <div class="text2"> DESIGN BY <b>GPUX</b></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

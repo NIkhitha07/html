@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div ~p{
+      background-color:cadetblue;
+    }
+    #s1{
+       background-color: deeppink;
+    }
+    /* p{
+      background-color: gold;
+    } */
+    h2 p{
+      background-color: blue;
+    }
+    p h2{
+      background-color: brown;
+    }
+  </style>
+</head>
+<body>
+
+
+<div>
+    <p id="s1">hiii<p>H2 inside h2</p>outer h2</p>
+  <p>Paragraph 1 in the div.</p>
+  <p><p>inner para</p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>  
+</div>
+
+<!-- The outer para here is not considered as paragraph -->
+<!-- <p><p>Inner paragraph</p>Outer paragraph</p> -->
+
+
+<p>Paragraph<h2>h2 inside para</h2>hello</p>
+
+<!-- para inside h2 considered as h2 -->
+<h2>h2<p > para inside h2</p> h2</h2>
+
+ <!-- para is considered as para but not hello  -->
+<p>Para <h2>h2 inside para</h2><p>para inside para after h2</p> hello</p>
+
+<h2>main h2<h2>sub h2</h2></h2>
+<!-- <div>
+  <span>hii
+    <span>
+      <h1>jiii</h1>
+      helllo
+      <h1>ji</h1>
+    </span>
+    bye
+  </span>
+</div> -->
+
+</body>
+</html>

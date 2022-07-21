@@ -1,0 +1,130 @@
+body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: row;
+        }
+        .child1{
+            flex-grow: 1;
+            width: 50%;
+            height: 100vh;
+            justify-content: center;
+        }
+        .child2{
+            flex-grow: 1;
+            /* flex-basis: 1; */
+            width: 50%;
+            height: 100vh;
+            background-image: linear-gradient(to top right, rgb(79, 78, 150), rgb(136, 78, 180));
+        }
+        .loginform{
+            margin: auto;
+            width: 80%;
+            padding: 50px;
+            padding-top: 20%;
+        }
+        .started{
+            font-size: 30px;
+            color: rgb(119, 82, 153);
+            padding-left: 0px;
+            padding-bottom: 50px;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 900px;
+        }
+        .icon{
+            font-size: 10x;
+            border: gainsboro;
+            color:gainsboro;
+            padding-right: 5px;
+        }
+        .itext{
+            border: none;
+        }
+        .input{
+            height: 40px;
+            padding: auto;
+            /* l */
+            width: 80%;
+            border: none;
+            border-bottom: solid rgb(197, 195, 195) 1px;
+        }
+        .input2{
+            height: 80px;
+            width: 80%;
+            border: none;
+            padding: auto;
+            padding-top: 40px;
+            border-bottom: solid rgb(197, 195, 195) 1px;
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            padding-top: 40px;
+        }
+        button{
+            border-radius: 20px ;
+            border: none;
+            color: white;
+            width: 190px;
+            padding: 11px;
+            background-color: rgb(68, 204, 174);
+            font-size: small;
+            box-shadow:1px 1px 8px rgb(84, 224, 189);
+            margin-left: 120px;
+        }
+        #text{
+            color: rgb(119, 82, 153);
+            padding-top: 10px;
+        }
+        #welcome{
+            position: relative;
+            margin-top: 150px;
+            font-family:serif;
+            font-size: 20px;
+            color: white;
+            font-family:sans-serif ;
+            font-weight: bold;
+        }
+        .icon2{
+            font-size: 120px;
+            padding-top: 60px;
+            color: ivory;
+        }
+        #btext{
+            color: rgba(255, 255, 255, 0.87);
+            width: 375px;
+            font-size: 15px;
+            padding: 60px;
+            margin: auto;
+        }
+        .b1{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+        .text{
+            color: white;
+            opacity:0.6;
+            font-family:monospace;
+            letter-spacing: 2px;
+            font-size: small;
+        }
+        .text2{
+            color: white;
+            opacity:0.6 ;
+            font-family:monospace;
+            font-size: small;
+            letter-spacing: 2px;
+        }
+        .border{
+            border-radius: 2px;
+            border-right:1px solid rgba(255, 255, 255, 0.568);
+        }
+        .s1{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }

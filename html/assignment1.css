@@ -1,0 +1,98 @@
+body{
+    text-align: center;
+    margin: 120px;
+}
+/* .container2{
+    padding: 30px;
+} */
+[tooltip] {
+    position: relative;
+    width: fit-content;
+    padding: 20px;
+}
+[tooltip]::after {
+    position: absolute;
+    display: none;
+    width: fit-content;
+    min-width: 100px;
+    padding: 10px;
+    font-size: 15px;
+    background-color:rgb(29, 28, 28);
+    border-radius: 5px;
+    color: white;
+    content: "Tooltip";
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+[tooltip][tooltip-position="top"]::after {
+    content: "Tooltip";
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+[tooltip][tooltip-position="bottom"]::after {
+    content: "Tooltip";
+    bottom: initial;
+    transform: initial;
+    top:calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+[tooltip][tooltip-position="left"]::after {
+    content: "Tooltip";
+    bottom: initial;
+    left:initial;
+    top: 50%;
+    right:calc(100% + 10px);
+    transform: translateY(-50%);
+}
+[tooltip][tooltip-position="right"]::after {
+    content: "Tooltip";
+    bottom: initial;
+    top: 50%;
+    left:calc(100% + 10px);
+    transform: translateY(-50%);
+}
+[tooltip]:hover::after {
+    display: inline-block;
+}
+[tooltip]:hover::before{
+    content: " ";
+    position: absolute;
+    left: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+[tooltip-position="top"]:hover::before{
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: black transparent transparent transparent;
+}
+[tooltip-position="bottom"]:hover::before{
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: transparent  transparent black transparent;
+}
+[tooltip-position="left"]:hover::before{
+    left:initial;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    border-color: transparent  transparent transparent black;
+}
+[tooltip-position="right"]:hover::before{
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    border-color: transparent  black transparent transparent ;
+}

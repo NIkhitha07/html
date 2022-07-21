@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ /* all p in the div --- descendent */
+/* div p {
+  background-color: yellow;
+} */
+
+/* only children -----child selector*/
+/* div > p{
+  background-color:pink;
+} */
+
+/* an elemet that is directly after specified element----- adjacent sibling selector */ */
+div + p{
+  text-align: center;
+}
+
+div p{
+  background-color: blue;
+}
+ /* div ~ p{
+  background-color:tomato;
+} */
+</style>
+</head>
+<body>
+<div>
+  <h2>Descendant Selector</h2>
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+    <section><p>Paragraph 3 in the div.</p></section>
+</div>
+<p>heya</p>
+<!-- <p>hii<p> </p>Paragraph soon after another paragraph2</p> -->
+<!-- <p>Paragraph soon after another paragraph</p>
+
+<div>
+  <h2>Descendant Selector</h2>
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+    <section><p>Paragraph 3 in the div.</p></section>
+  </div>
+<p>Paragraph soon after another paragraph</p>
+
+<h4>Paragraph 3. After a div.</h4>
+<h4>Paragraph 4. After a div but not applicable.</h4>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+<h5>Paragraph 6. General  sibling selector.</h5>
+<h5>Paragraph 5. General sibling selector.</h5> -->
+
+</body>
+</html>
+

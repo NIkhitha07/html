@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        /* span>h2{
+            background-color:red;
+        }
+        span>h2{
+            background-color:rgb(19, 179, 27);
+        }
+        div>span{
+            background-color:blueviolet;
+        }
+        div + p{
+            background-color: darkkhaki;
+        } */
+        div p {
+            background-color: fuchsia;
+        }
+        div +p {
+            background-color:lightseagreen;
+        }
+
+        span~p {
+            background-color: lightpink
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>first child of div</h1>
+        <p>paragraph element in div tag</p>
+        <div>
+            <p>this is p tag</p>
+            <h1>this is h1 tag</h1>
+            <span>span inside div</span>
+        </div>
+    </div>
+    <p>adjacent p for div</p>
+    <span>
+        <p>hello</p>
+        <span>
+            div tag inside span tag<h2>keep smiling</h2>
+            <p>hii</p>
+        </span>namasthe
+        <p>2345</p>
+        <h2>h2 tag inside span</h2>
+        <span>span inside span</span>
+    </span>
+
+    <hr>
+
+    <p>adjacent p for div</p>
+    <div>
+        <p>hello</p>
+        <div>
+            div tag inside span tag<h2>keep smiling</h2>
+            <p>hii</p>
+        </div>namasthe
+        <p>234</p>
+        <h2>h2 tag inside span</h2>
+    </div>
+    <p>56778</p>
+</body>
+
+</html>
